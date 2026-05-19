@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #0f172a;
+  color: white;
+  padding: 32px 24px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 14px;
+}
+
+.sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.statCard span {
+  display: block;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.statCard strong {
+  font-size: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.receipt {
+  margin-top: 24px;
+  background: #0f172a;
+  color: white;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+pre {
+  overflow-x: auto;
+  font-size: 12px;
+}
+
+.incidentList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.incidentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.incidentItem p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.HIGH {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.MEDIUM {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.LOW {
+  background: #dcfce7;
+  color: #166534;
+}
+.stats {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.incidentText {
+  max-width: 65%;
+}
+
+.rightStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button.small {
+  width: auto;
+  margin-top: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+button.approve {
+  background: #16a34a;
+}
+
+button.escalate {
+  background: #d97706;
+}
+
+button.reject {
+  background: #dc2626;
+}
+.downloadBtn {
+  width: auto;
+  background: #0f172a;
+  margin-bottom: 14px;
+}
+
+.downloadBtn:hover {
+  background: #1e293b;
+}
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.infoCard h3 {
+  margin-top: 0;
+}
+
+.infoCard ul {
+  padding-left: 18px;
+  color: #475569;
+}
+
+.infoCard li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.timeline span {
+  background: #e2e8f0;
+  color: #334155;
+  padding: 6px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.receiptId {
+  font-size: 12px;
+  color: #64748b;
+}
