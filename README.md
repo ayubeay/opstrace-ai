@@ -41,3 +41,14 @@ Frontend runs at:
 ```text
 http://localhost:5173
 ```
+## Example Receipt
+
+```json
+{
+  "receipt_id": "OPS-1042",
+  "severity": "HIGH",
+  "status": "ESCALATED",
+  "review_required": true,
+  "created_at": "2026-05-19T00:00:00Z"
+}
+```
