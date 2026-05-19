@@ -10,13 +10,34 @@ Operational AI workflow prototype focused on governed support/service workflows.
 - Human-in-the-loop review
 - Audit-ready receipt generation
 - Operational lifecycle tracking
+- Downloadable JSON receipts
 
-## Stack
+## Architecture
 
-- React / Vite frontend
-- FastAPI backend
-- Local mock AI classification logic
+```text
+React / Vite Frontend
+        ↓
+FastAPI Backend
+        ↓
+Mock AI Classification Engine
+        ↓
+Governance Rules
+        ↓
+Human Review Actions
+        ↓
+Audit Receipt Output
+```
 
-## Purpose
+### Frontend
 
-Built as a proof-of-work prototype exploring how AI-assisted workflows can remain traceable, reviewable, and governed in operational environments.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```text
+http://localhost:5173
+```
